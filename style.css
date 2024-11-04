@@ -1,14 +1,191 @@
 header {
     width: 100%;
-    height: 18vh;
+    height: 10vh;
     background-color: rgba(0, 0, 0, 0.856);
     border-bottom: 0.3vh solid #505050;
+    position: fixed;
+    top: 0;
+    z-index: 10;
 }
 body {
     margin: 0;
-    background: url(bg.jpg);
+    background: url(https://cdn.pixabay.com/photo/2018/08/15/13/10/galaxy-3608029_1280.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    overflow-x: hidden;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 10vh;
+}
+main img {
+    height: 60vh;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    transition: transform 0.3s ease-in-out;
+    animation: ap 2s forwards;
+}
+html {
+    font-family: "Roboto", sans-serif;
+}
+main h1 {
+    font-size: 5vh;
+    color: white;
+    text-shadow: 0.2vh 0.2vh 0.4vh rgb(0, 0, 0);
+    letter-spacing: 0.1vw;
+    background-color: rgba(0, 0, 0, 0.808);
+    padding: 2vh;
+    border-radius: 10vh;
+    box-shadow: 0.2vh 0.2vh 0.4vh rgb(0, 0, 0);
+    transition: transform 0.3s ease-in-out;
+    animation: ap 2s forwards;
+}
+.log {
+    height: 100%;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.log a {
+    height: 100%;
+}
+.log a img {
+    height: 100%;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+.inf1 {
+    width: 100%;
+    margin-top: 5vh;
+    font-size: 3vh;
+    color: white;
+    text-shadow: 0.2vh 0.2vh 0.4vh rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.808);
+    border-radius: 1vh;
+    box-shadow: 0.2vh 0.2vh 0.4vh rgb(0, 0, 0);
+    transition: transform 0.3s ease-in-out;
+    animation: ap 2s forwards;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 0.3vh solid #505050;
+    padding: 2vh;
+    animation-timeline: scroll(y);
+}
+.txt1 {
+    text-align: center;
+    width: 50%;
+}
+.gif1 {
+    border-radius: 3vh;
+    overflow: hidden;
+    box-shadow: 0.2vh 0.2vh 0.4vh rgb(0, 0, 0);
+}
+.gif1 img {
+    height: 40vh;
+}
+.inf2 {
+    width: 80%;
+    margin-top: 5vh;
+    font-size: 3vh;
+    color: white;
+    text-shadow: 0.2vh 0.2vh 0.4vh rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.808);
+    border-radius: 10vh;
+    box-shadow: 0.2vh 0.2vh 0.4vh rgb(0, 0, 0);
+    transition: transform 0.3s ease-in-out;
+    animation: ap 2s forwards;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 0.3vh solid #505050;
+    padding: 2vh;
+    animation-timeline: scroll(y);
+}
+.txt2 {
+    text-align: center;
+    width: 50%;
+}
+.img1 {
+    border-radius: 3vh;
+    overflow: hidden;
+}
+.img1 img {
+    height: 30vh;
+}
+.inf3 {
+    width: 100%;
+    margin-top: 5vh;
+    font-size: 3vh;
+    color: white;
+    text-shadow: 0.2vh 0.2vh 0.4vh rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.808);
+    border-radius: 1vh;
+    box-shadow: 0.2vh 0.2vh 0.4vh rgb(0, 0, 0);
+    transition: transform 0.3s ease-in-out;
+    animation: ap 2s forwards;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 0.3vh solid #505050;
+    padding: 2vh;
+    animation-timeline: scroll(y);
+}
+.txt3 {
+    text-align: center;
+    width: 50%;
+}
+.img2 {
+    border-radius: 3vh;
+    overflow: hidden;
+}
+.img2 img {
+    height: 40vh;
+}
+footer {
+    width: 100%;
+    height: 35vh;
+    background-color: rgba(0, 0, 0, 0.856);
+    border-top: 0.3vh solid #505050;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    font-size: 2vh;
+    text-shadow: 0.2vh 0.2vh 0.4vh rgb(0, 0, 0);
+    transition: transform 0.3s ease-in-out;
+    margin-top: 8vh;
+}
+footer img {
+    height: 25vh;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+em {
+    color: #3172ff;
+}
+
+@keyframes ap {
+    0% {
+        transform: translateY(5vh);
+        opacity: 0.5;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
