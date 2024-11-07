@@ -6,6 +6,9 @@ header {
     position: fixed;
     top: 0;
     z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 body {
     margin: 0;
@@ -177,6 +180,40 @@ footer img {
 }
 em {
     color: #3172ff;
+}
+.exp {
+    height: 100%;
+    width: fit-content;
+    font-size: 4vh;
+    color: white;
+    text-shadow: 0.2vh 0.2vh 0.4vh rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    margin-right: 3vw;
+    letter-spacing: 0.1vw;
+    position: relative;
+}
+.menu {
+    display: flex;
+    position: absolute;
+    top: 100%;
+    background-color: rgba(0, 0, 0, 0.856);
+    padding: 2vh;
+    border-radius: 1vh;
+    box-shadow: 0.2vh 0.2vh 0.4vh rgb(0, 0, 0);
+    transition: transform 0.3s ease-in-out;
+    width: 100%;
+}
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 }
 
 @keyframes ap {
