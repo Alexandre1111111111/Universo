@@ -225,7 +225,8 @@ em {
     text-align: center;
     background-color: #080829;
     border: 0.3vh solid #00013f;
-    margin-top: 2vh;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
     color: #ffffff;
     transition-duration: 0.3s;
 }
