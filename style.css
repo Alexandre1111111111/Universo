@@ -201,7 +201,6 @@ em {
     position: absolute;
     top: 100%;
     background-color: rgba(0, 0, 0, 0.856);
-    padding: 2vh;
     border-radius: 1vh;
     box-shadow: 0.2vh 0.2vh 0.4vh rgb(0, 0, 0);
     transition: transform 0.3s ease-in-out;
@@ -214,8 +213,26 @@ em {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    width: 100%;
+}
+.menu a {
+    text-decoration: none;
+    font-size: 90%;
+    width: 100%;
+}
+.menu a li {
+    width: 100%;
+    text-align: center;
+    background-color: #080829;
+    border: 0.3vh solid #00013f;
+    margin-top: 2vh;
+    color: #ffffff;
+    transition-duration: 0.3s;
 }
 
+.menu a li:hover {
+    background-color: #212172;
+}
 @keyframes ap {
     0% {
         transform: translateY(5vh);
